@@ -75,7 +75,7 @@ Container(
 ```
 ## 📦 Despliegue
 
-Build the application for production:
+Compila la aplicación para producción:
 
 ```bash
 # Para Android
