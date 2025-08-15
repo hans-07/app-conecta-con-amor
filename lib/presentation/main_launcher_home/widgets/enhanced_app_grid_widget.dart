@@ -164,7 +164,7 @@ class EnhancedAppGridWidget extends StatelessWidget {
     );
   }
 
-  void _handleWhatsAppAction(BuildContext context) {
+  void handleWhatsAppAction(BuildContext context) {
     HapticFeedback.mediumImpact();
 
     // Show options: Open WhatsApp or Learn to use WhatsApp
@@ -346,7 +346,7 @@ class EnhancedAppGridWidget extends StatelessWidget {
     );
   }
 
-  void _handleFlashlightAction(BuildContext context) {
+  void handleFlashlightAction(BuildContext context) {
     HapticFeedback.mediumImpact();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -367,7 +367,7 @@ class EnhancedAppGridWidget extends StatelessWidget {
     );
   }
 
-  void _handleCalculatorAction(BuildContext context) {
+  void handleCalculatorAction(BuildContext context) {
     HapticFeedback.mediumImpact();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -388,7 +388,7 @@ class EnhancedAppGridWidget extends StatelessWidget {
     );
   }
 
-  void _handleWeatherAction(BuildContext context) {
+  void handleWeatherAction(BuildContext context) {
     HapticFeedback.mediumImpact();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

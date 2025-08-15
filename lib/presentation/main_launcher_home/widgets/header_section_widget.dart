@@ -16,7 +16,7 @@ class HeaderSectionWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Mi Teléfono hh',
+            'Mi Teléfono',
             style: AppTheme.lightTheme.textTheme.displaySmall?.copyWith(
               color: AppTheme.lightTheme.colorScheme.onSurface,
               fontWeight: FontWeight.w800,
