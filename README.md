@@ -1,49 +1,49 @@
 # Flutter
 
-A modern Flutter-based mobile application utilizing the latest mobile development technologies and tools for building responsive cross-platform applications.
+Una aplicación móvil moderna basada en Flutter que utiliza las últimas tecnologías y herramientas de desarrollo móvil para crear aplicaciones responsivas multiplataforma
 
-## 📋 Prerequisites
+## 📋 Requisitos previos
 
 - Flutter SDK (^3.29.2)
 - Dart SDK
-- Android Studio / VS Code with Flutter extensions
-- Android SDK / Xcode (for iOS development)
+- Android Studio / VS Code con extensiones de Flutter
+- Android SDK / Xcode (para desarrollo en iOS)
 
-## 🛠️ Installation
+## 🛠️ Instalación
 
-1. Install dependencies:
+1. Instala las dependencias:
 ```bash
 flutter pub get
 ```
 
-2. Run the application:
+2. Ejecuta la aplicación:
 ```bash
 flutter run
 ```
 
-## 📁 Project Structure
+## 📁 Estructura del proyecto
 
 ```
 flutter_app/
-├── android/            # Android-specific configuration
-├── ios/                # iOS-specific configuration
+├── android/            # Configuración específica de Android
+├── ios/                # Configuración específica de iOS
 ├── lib/
-│   ├── core/           # Core utilities and services
-│   │   └── utils/      # Utility classes
-│   ├── presentation/   # UI screens and widgets
-│   │   └── splash_screen/ # Splash screen implementation
-│   ├── routes/         # Application routing
-│   ├── theme/          # Theme configuration
-│   ├── widgets/        # Reusable UI components
-│   └── main.dart       # Application entry point
-├── assets/             # Static assets (images, fonts, etc.)
-├── pubspec.yaml        # Project dependencies and configuration
-└── README.md           # Project documentation
+│   ├── core/           # Utilidades y servicios principales
+│   │   └── utils/      # Clases utilitarias
+│   ├── presentation/   # Pantallas y widgets de la interfaz
+│   │   └── splash_screen/ # Implementación de la pantalla de inicio
+│   ├── routes/         # Rutas de la aplicación
+│   ├── theme/          # Configuración de temas
+│   ├── widgets/        # Componentes reutilizables de UI
+│   └── main.dart       # Punto de entrada de la aplicación
+├── assets/             # Recursos estáticos (imágenes, fuentes, etc.)
+├── pubspec.yaml        # Dependencias y configuración del proyecto
+└── README.md           # Documentación del proyecto
 ```
 
 ## 🧩 Adding Routes
 
-To add new routes to the application, update the `lib/routes/app_routes.dart` file:
+Para agregar nuevas rutas a la aplicación, actualiza el archivo app_routes.dart:
 
 ```dart
 import 'package:flutter/material.dart';
@@ -56,50 +56,31 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     initial: (context) => const SplashScreen(),
     home: (context) => const HomeScreen(),
-    // Add more routes as needed
+    // Agrega más rutas según sea necesario
   }
 }
 ```
 
-## 🎨 Theming
-
-This project includes a comprehensive theming system with both light and dark themes:
-
-```dart
-// Access the current theme
-ThemeData theme = Theme.of(context);
-
-// Use theme colors
-Color primaryColor = theme.colorScheme.primary;
-```
-
-The theme configuration includes:
-- Color schemes for light and dark modes
-- Typography styles
-- Button themes
-- Input decoration themes
-- Card and dialog themes
-
 ## 📱 Responsive Design
 
-The app is built with responsive design using the Sizer package:
+La app está construida con diseño responsivo usando el paquete Sizer:
 
 ```dart
-// Example of responsive sizing
+// Ejemplo de tamaño responsivo
 Container(
-  width: 50.w, // 50% of screen width
-  height: 20.h, // 20% of screen height
-  child: Text('Responsive Container'),
+  width: 50.w, // 50% del ancho de la pantalla
+  height: 20.h, // 20% de la altura de la pantalla
+  child: Text('Contenedor responsivo'),
 )
 ```
-## 📦 Deployment
+## 📦 Despliegue
 
 Build the application for production:
 
 ```bash
-# For Android
+# Para Android
 flutter build apk --release
 
-# For iOS
+# Para iOS
 flutter build ios --release
 ```
